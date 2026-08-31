@@ -1,0 +1,355 @@
+<!-- <!DOCTYPE html>
+<html> 
+    <head>
+<title  style="color: brown;"> M7MD</title>
+
+
+<style>
+
+/*h1{
+    color: brown;
+    background:gold ;
+}
+*/
+
+.tast{
+    color: hotpink;
+    background:gold ;
+}
+
+.tast2{
+    color: hotpink;
+    background:darkred ;
+}
+
+</style>
+
+
+</head>
+    <body>
+
+<h1 class="tast">mo</h1>
+<h1 class="tast2">he</h1>
+
+
+
+</body>
+</html> -->
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <!-- الأكواد الاحترافية المضافة لتسهيل ظهور الموقع في بحث جوجل (SEO) -->
+    <title>M7MD Cyber Terminal // Encrypted Hidden Node</title>
+    <meta name="description" content="الموقع الرسمي لـ M7MD Cyber Terminal - خادم ويب مشفر ومحاكاة احترافية للأنظمة العميقة والسرية.">
+    <meta name="keywords" content="M7MD, Cyber Terminal, HTML Project, Dark Web Simulation, المشفر, هكر">
+    <meta name="robots" content="index, follow">
+    
+    <style>
+        /* 1. إعدادات النظام الخام والخطوط البرمجية */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Consolas', 'Courier New', Courier, monospace;
+        }
+
+        body {
+            background-color: #010201;
+            color: #00ff33; /* اللون الأخضر الفسفوري العسكري */
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 20px;
+            position: relative;
+            overflow-x: hidden;
+        }
+
+        /* 2. دمج صورتك وتأثير شاشة الـ Matrix المتساقطة في الخلفية */
+        #matrixCanvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 1;
+            opacity: 0.15; /* تأثير مصفوفة خافت جداً */
+            pointer-events: none;
+        }
+
+        .background-image-layer {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-image: linear-gradient(rgba(1, 2, 1, 0.97), rgba(1, 2, 1, 0.97)), url('https://wallpaperflare.com');
+            background-repeat: no-repeat;
+            background-size: cover;
+            background-position: center;
+            background-attachment: fixed;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        /* 3. حاوية الأنظمة المخفية (Onion Node Terminal) */
+        .onion-mainframe {
+            position: relative;
+            z-index: 10;
+            background: rgba(4, 6, 4, 0.95);
+            border: 1px solid #00aa22;
+            width: 100%;
+            max-width: 850px;
+            padding: 30px;
+            box-shadow: 0 0 40px rgba(0, 255, 51, 0.12);
+        }
+
+        /* شريط مراقبة الشبكة والـ Relays */
+        .network-bar {
+            border-bottom: 1px solid #00aa22;
+            padding-bottom: 12px;
+            margin-bottom: 25px;
+            display: flex;
+            justify-content: space-between;
+            font-size: 0.8rem;
+            color: #008811;
+        }
+
+        .status-blink {
+            color: #00ff33;
+            animation: pulseText 2s infinite;
+        }
+
+        /* 4. تنسيق حركة الكتابة التلقائية المحدث باسمك */
+        h1 {
+            font-size: 2.3rem;
+            font-weight: bold;
+            text-transform: uppercase;
+            letter-spacing: 2px;
+            margin-bottom: 15px;
+            color: #00ff33;
+            display: inline-block;
+            border-bottom: 1px dashed rgba(0, 255, 51, 0.3);
+            padding-bottom: 10px;
+            width: 100%;
+        }
+
+        /* مؤشر الكتابة الوامض للأنظمة الطرفية */
+        .terminal-cursor {
+            display: inline-block;
+            background-color: #00ff33;
+            width: 10px;
+            height: 24px;
+            animation: terminalBlink 0.8s infinite;
+            vertical-align: middle;
+            margin-left: 5px;
+        }
+
+        /* النصوص والتحذيرات التوعوية والمشفرة */
+        .security-alert {
+            color: #ff3333;
+            font-size: 0.85rem;
+            margin-bottom: 25px;
+            text-transform: uppercase;
+            background: rgba(255, 51, 51, 0.05);
+            padding: 10px 15px;
+            border-left: 4px solid #ff3333;
+        }
+
+        .console-logs {
+            color: #88ccff;
+            font-size: 0.9rem;
+            line-height: 1.7;
+            margin-bottom: 30px;
+        }
+
+        /* 5. دليل الروابط المخفية الافتراضية داخل السيرفر */
+        .onion-directory {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 35px;
+            font-size: 0.85rem;
+        }
+
+        .onion-directory th, .onion-directory td {
+            border: 1px solid rgba(0, 255, 51, 0.2);
+            padding: 12px;
+            text-align: left;
+        }
+
+        .onion-directory th {
+            background: rgba(0, 255, 51, 0.06);
+            color: #00ff33;
+        }
+
+        .onion-directory td {
+            color: #ffffff;
+        }
+
+        .onion-link {
+            color: #00bfff;
+            text-decoration: none;
+        }
+
+        .onion-link:hover {
+            text-decoration: underline;
+        }
+
+        /* 6. بوابة فك تشفير البيانات والتحقق من الـ PGP Key */
+        .crypto-box {
+            background: #010301;
+            border: 1px solid rgba(0, 255, 51, 0.3);
+            padding: 20px;
+        }
+
+        .crypto-box label {
+            display: block;
+            font-size: 0.8rem;
+            margin-bottom: 10px;
+            color: #008811;
+            letter-spacing: 1px;
+        }
+
+        .input-group {
+            display: flex;
+            gap: 12px;
+        }
+
+        .onion-input {
+            flex: 1;
+            background: #000000;
+            border: 1px solid #00aa22;
+            padding: 14px;
+            color: #00ff33;
+            font-size: 0.95rem;
+            outline: none;
+        }
+
+        .onion-input:focus {
+            box-shadow: 0 0 12px rgba(0, 255, 51, 0.25);
+        }
+
+        .submit-btn {
+            background: #00aa22;
+            color: #000000;
+            border: none;
+            padding: 0 30px;
+            font-weight: bold;
+            font-size: 0.9rem;
+            text-transform: uppercase;
+            cursor: pointer;
+            transition: all 0.2s;
+        }
+
+        .submit-btn:hover {
+            background: #00ff33;
+            box-shadow: 0 0 15px #00ff33;
+        }
+
+        /* حركات الأنيميشن الـ CSS */
+        @keyframes terminalBlink {
+            0%, 100% { opacity: 0; }
+            50% { opacity: 1; }
+        }
+
+        @keyframes pulseText {
+            0%, 100% { opacity: 0.5; }
+            50% { opacity: 1; }
+        }
+
+        /* دعم كامل وهندسة متجاوبة مع الهواتف الذكية */
+        @media (max-width: 650px) {
+            h1 { font-size: 1.6rem; }
+            .input-group { flex-direction: column; }
+            .submit-btn { padding: 15px; }
+            .onion-directory { display: block; overflow-x: auto; }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- طبقة الصورة الخلفية المعتَّمة كلياً -->
+    <div class="background-image-layer"></div>
+
+    <!-- لوحة كود الـ Matrix المتساقط بالخلفية برمجياً -->
+    <canvas id="matrixCanvas"></canvas>
+
+    <!-- لوحة تحكم السيرفر المخفي والمشفر بالكامل -->
+    <div class="onion-mainframe">
+        
+        <!-- شريط معطيات اتصال متصفح تور التخيلي -->
+        <div class="network-bar">
+            <div>CIRCUIT: PROXY -> GERMANY -> REYJAVIK -> HYBRID_NODE</div>
+            <div class="status-blink">● SYSTEM_SECURE_V3</div>
+        </div>
+
+        <!-- [الأمر المطلوب والمحدث لليحث] عنوان h1 مع حركة الكتابة التلقائية الحية -->
+        <h1 id="typingTitle"><span class="terminal-cursor"></span></h1>
+
+        <!-- التحذير العسكري السري الصارم لمنع تعقب الخادم -->
+        <div class="security-alert">
+            [WARNING] EMERGENCY CORRUPT CODE ACTIVE. PACKETS ENCRYPTED VIA AES-256. 
+        </div>
+
+        <p class="console-logs">
+            [+] تم تحميل جميع أدوات ومكونات مشروع الويب الخاص بك بنجاح. تم تعديل وضبط الكود بالكامل وربطه بـ (SEO Metadata) ليسهل على محركات البحث وجوجل العثور على موقعك وفهرسته فور رفعه على الرابط المباشر.
+        </p>
+
+        <!-- جدول استعراض السجلات المخفية والمحمية ومساراتها التخيلية -->
+        <table class="onion-directory">
+            <thead>
+                <tr>
+                    <th>Core Repository</th>
+                    <th>Onion Path Hash</th>
+                    <th>Bandwidth</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>M7MD Terminal Core</td>
+                    <td><a href="#" class="onion-link">m7md_hidden_node_v3x9a1.onion</a></td>
+                    <td style="color: #00ff33;">94.2 MB/s</td>
+                </tr>
+                <tr>
+                    <td>Asset Database</td>
+                    <td><a href="#" class="onion-url">assets_enc_layer0x42f.onion</a></td>
+                    <td style="color: #00ff33;">120.5 MB/s</td>
+                </tr>
+                <tr>
+                    <td>Encrypted Proxies</td>
+                    <td><a href="#" class="onion-url">relay_tunnel_sec88k1.onion</a></td>
+                    <td style="color: #ffaa00;">TUNNELING</td>
+                </tr>
+            </tbody>
+        </table>
+
+        <!-- حقل التحقق الأساسي وبوابة فك التشفير التفاعلية -->
+        <div class="crypto-box">
+            <label>DECRYPTION KEY REQUIRED // ENTER SECRET PASSPHRASE</label>
+            <form class="input-group" onsubmit="event.preventDefault(); alert('ERROR: COMPROMISED PASS KEY. ATTEMPT LOGGED TO M7MD SERVER.');">
+                <input type="password" class="onion-input" placeholder="-----BEGIN PGP MESSAGE BLOCK-----" required>
+                <button type="submit" class="submit-btn">EXECUTE</button>
+            </form>
+        </div>
+
+    </div>
+
+    <!-- محرك الـ JavaScript المدمج لتفعيل تأثيرات المصفوفة والكتابة الحية كلياً -->
+    <script>
+        // تفعيل حركة الكتابة التلقائية التنازلية لعنوان الـ H1 باسمك المحدث للبحث
+        const titleText = "M7MD Cyber Terminal";
+        let index = 0;
+        const titleElement = document.getElementById("typingTitle");
+
+        function typeTitle() {
+
